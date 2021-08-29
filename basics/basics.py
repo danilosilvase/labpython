@@ -139,6 +139,8 @@ False
 
 #diferente
 
+1 != 2
+
 # Operador 'and'
 x =1
 (x == 1)
