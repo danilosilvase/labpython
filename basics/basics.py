@@ -46,6 +46,10 @@ print('nome_da_variavel: Meu nome é {one} e tenho {two} anos de idade'.format(o
 lista = [1, 2, 3]
 type(lista)
 
+lista = ['a', 'b', 'c']
+type(lista)
+lista[2]
+
 # Listas permitem todo tipo de valor, inclusive outra lista
 
 lista2 = [1, 2 ,3 , ['a', 'b', 'c']]
@@ -67,6 +71,47 @@ lista[:2] # irah imprimir ateh o indice 2
 #imprimindo "a partir de... ateh ..."
 lista[1:3] 
 
+#A impressao de uma string se assemelha a lista
+#Exemplo
+string='nome'
+string[3]
+
+#Nested list
+lista=[1, 2, 3, ['a', 'b', 'c']]
+
+#Dicionario
+#lista relacionada com chave/valor
+#Exemplo 1
+dic= {'valor1':1, 'valor2':2}
+print(dic)
+
+type(dic)
+
+#Imprimindo dicionario
+#
+dic['valor2'] # Imprime a chave e ele retorna o valor
+
+#exemplo2
+
+lista = {'valor1':['a', 'b', 'c'], 'valor2':[1, 2 ,3]}
+
+# imprindo um dicionario e definindno um valor da lista
+
+lista['valor1'][2]
+
+# Tupla
+# A tupla eh um objeto imutavel / 'tuple' object does not support item assignment
+#Exemplo
+
+tupla =  (1, 2, 3)
+type(tupla)
+tupla[1]
+
+# tentando alterar valor da tupla e gerando erro "'tuple' object does not support item assignment"
+tupla[1] = 2
+
+
+# Operacoes logicas
 
 
 
