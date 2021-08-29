@@ -113,6 +113,80 @@ tupla[1] = 2
 
 # Operacoes logicas
 
+# Booleno
+
+True
+False
+
+# O resultado de 'X eh igual a Y?
+1 == 2 # O valor retornarah true/false
+
+# Maior que
+
+1 > 2
+
+# Menor que
+
+2 < 4
+
+# Maior ou igual a
+
+3 >= 2
+
+# Menor ou igual a
+
+2 <= 4
+
+#diferente
+
+# Operador 'and'
+x =1
+(x == 1)
+
+(x == 1) and (x <= 0) # este resultado retorna falso
+
+# Operador 'or'
+
+# Condicionais
+# if
+
+y = 'Reprovado'
+x = 8
+
+if x < 7:
+    y = 'Aprovado'
+    print(y)
+
+# Else
+
+y = 'Reprovado'
+x = 8
+
+if x > 7:
+    y = 'Aprovado'
+    print(y)
+else:
+    print(y)
+
+# Elif
+# Basicamente um segundo if, ele permite a criacao de condicoes intermediarias
+# comparando os profixmos valores com o da primeira condicao. 
+
+y = 'Reprovado'
+x = 4
+
+if x > 7:
+    y = 'Aprovado'
+    print(y)
+elif x > 5:
+    y = 'Quase lah'
+    print(y)
+elif x > 4:
+    y = 'recuperacao'
+    print(y)
+else:
+    print(y)
+
 
 
 
