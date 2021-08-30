@@ -190,5 +190,64 @@ else:
     print(y)
 
 
+# For
+# O for requer um iterator para percorrer as posicoes.
+seq = [1, 2, 3, 4, 5]
 
+for item in seq:
+    print(item)
+
+# Range
+# permite que faca preenchimento de ranges
+
+range(0, 100)
+type(range(0, 100))
+
+#exemplo
+
+seq = list(range(0, 100))
+
+for itens in seq:
+    print(itens)
+
+seq
+
+# While
+
+i=1
+
+while i < 5:
+    print('i vale: {}'.format(i+1))
+    i = i+1
+
+
+# List compreention - Procurar mais detalhes
+
+out = []
+x = [1, 2, 3, 4]
+
+for item in x:
+    out.append(item**2)
+out
+
+# Exemplo2
+
+[item**2 for item in x]
+
+# Funcoes
+# Exemplo com paramentro
+
+def my_function(param):
+    print(param)
+
+my_function('oi')
+
+
+# Exemplo 2 - using return
+
+def my_function(x):
+    y = x ** 2
+    return y
+
+my_function(2)
 
