@@ -251,3 +251,41 @@ def my_function(x):
 
 my_function(2)
 
+# Funcoes lambda
+# Versao simplificada de uma funcao para otimizar o codigo
+
+# Exemplo de funcao tradicional
+def quadrado(var):
+    return var ** 2
+
+# Exemplo de funcao lambda
+lambda var: var ** 2
+
+## Map
+
+def quadrado(var):
+    return var ** 2
+seq = [1, 2, 3, 4, 5]
+list(map(quadrado, seq))
+
+
+## Map using lambda
+
+seq = [1, 2, 3, 4, 5]
+list(map(lambda x:x**2, seq))
+
+# Filter
+# Retorna apenas os valores que sao verdadeiros para a condicao
+
+seq = [1, 2, 3, 4, 5]
+list(filter (lambda item:item%2==0, seq))
+
+#Exemplo com impares e range
+seq = list(range(0 ,50))
+list(filter (lambda item:item%2==1, seq))
+
+#Metodos
+#Funcoes de uma classe
+
+
+
