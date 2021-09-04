@@ -1,6 +1,11 @@
 import boto3
-region = 'us-east-1'
-instances = ['i-02fdea0754c02738e']
+import os
+
+#Attributes
+
+region = os.environ['REGION']
+instances = os.environ["INSTANCES"].split(" ")
+
 
 ec2 = boto3.client('ec2' , region_name = region)
 
