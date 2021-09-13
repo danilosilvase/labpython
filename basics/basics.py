@@ -76,6 +76,9 @@ lista[1:3]
 string='nome'
 string[3]
 
+
+
+
 #Nested list
 lista=[1, 2, 3, ['a', 'b', 'c']]
 
