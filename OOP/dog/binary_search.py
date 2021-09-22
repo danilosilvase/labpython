@@ -29,6 +29,9 @@ newNumber = Numbers()
 result = newNumber.searchNumbers(lista, number)
 newNumber.printNumbers(result)
 
+## Performance
+## Run time: O(log n) - Linear time
+
 
 
     
