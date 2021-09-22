@@ -8,3 +8,10 @@ def apache_log_reader(logfile):
 
 if __name__ == '__main__':
     apache_log_reader("access_log")
+
+
+
+ ## Data structure
+ # 
+ # 
+ #    
