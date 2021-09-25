@@ -18,8 +18,8 @@ class ApacheParse():
         ips = []
         for line in self.logs:
             ips.append(line.strip().split(" ")[0])
-        ip_frequent_access = (Counter(ips))
-        print(ip_frequent_access.most_common(4))
+        ip_frequent_access = (Counter(ips)) # Counter will return a collection Couter, like a dictionary
+        print(ip_frequent_access.most_common(5))
 
               
 def main():

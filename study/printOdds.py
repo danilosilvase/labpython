@@ -3,13 +3,15 @@ from itertools import groupby
 
 def find_odd_number(input_array) -> list:
         grouped_numbers = [list(value) for item, value in groupby(input_array)]
+        print(type(groupby(input_array)))
+        print(groupby(input_array))
         list_odd_count_numbers = (x for x in grouped_numbers if len(x) % 2 != 0)
         return list_odd_count_numbers
 
 def print_odd_numbers(odd_number):
-    # for items in odd_number:
-    #     print(items[0])
-    print(max(odd_number)[0])
+    for items in odd_number:
+        print(items[0])
+    # print(max(odd_number)[0])
 
 def main():
 

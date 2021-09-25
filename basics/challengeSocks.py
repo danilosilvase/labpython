@@ -17,6 +17,6 @@ def sockMerchant(n, ar):
     return len(pairSocks)
 
 if __name__ == '__main__':
-    # ar = [10, 20, 20, 10, 10, 30, 50, 10, 20]
-    ar = [100]
+    ar = [10, 20, 20, 10, 10, 30, 50, 10, 20]
+    # ar = [100]
     sockMerchant(1, ar)
