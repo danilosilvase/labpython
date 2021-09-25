@@ -14,8 +14,8 @@ with open('logs') as file:
 sorted_visits = sorted(visits, key= lambda x in x: x[1])
 print(sorted_visits[0])
 
-# Write a program that can read fortune files and returns a random fortune to the user.
-# Fortune Format Example: Fortunes are separated by a % sign on a single line followed by a newline character.
+    # Write a program that can read fortune files and returns a random fortune to the user.
+    # Fortune Format Example: Fortunes are separated by a % sign on a single line followed by a newline character.
 # This is a fortune
 # %
 # Here is
