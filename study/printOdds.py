@@ -3,8 +3,9 @@ from itertools import groupby
 
 def find_odd_number(input_array) -> list:
         grouped_numbers = [list(value) for item, value in groupby(input_array)]
-        print(type(groupby(input_array)))
-        print(groupby(input_array))
+        # print(type(groupby(input_array)))
+        # print(groupby(input_array))
+        print(grouped_numbers)
         list_odd_count_numbers = (x for x in grouped_numbers if len(x) % 2 != 0)
         return list_odd_count_numbers
 
@@ -22,3 +23,6 @@ def main():
     
 if __name__ == "__main__":
     main()
+
+
+

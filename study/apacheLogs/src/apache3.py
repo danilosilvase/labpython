@@ -15,12 +15,11 @@ class ApacheParse():
             self.logs = apache_logs.readlines()
         
     def print_frequent_acess(self):
-        ips = []
-        for line in self.logs:
-            ips.append(line.strip().split(" ")[0])
-        ip_frequent_access = (Counter(ips)) # Counter will return a collection Couter, like a dictionary
-        print(ip_frequent_access.most_common(5))
-
+        ips = [ip.strip().split(" ")[0] for ip in self.logs]  ## O(n)
+        ip_frequent_access = (Counter(ips).most_common(4))
+        # print(type(ip_frequent_access)) # this will return a list
+        for ip, count in ip_frequent_access:
+            print("{one} => {two}".format(one=ip, two=count))
               
 def main():
     ap1 = ApacheParse()
