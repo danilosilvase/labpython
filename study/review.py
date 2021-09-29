@@ -173,4 +173,223 @@
     
 # if __name__=="__main__":
 #     main()
+
+# 2. Write a Sort function to sort the elements in a list 
+
+# def sort_list(list):
+#     list.sort()
+#     print(list)
     
+# def main():
+#     list = [55, 67, 32, 98, 23, 76, 43, 99, 2, 1]
+#     sort_list(list)
+    
+# if __name__=="__main__":
+#     main()
+
+
+# Write a sorting function without using the list.sort function
+
+# Write a sorting function without using the list.sort function
+
+# output ==>> serted list
+
+# def quick_sort(array_list: list) -> list:
+#     if len(array_list) < 2:
+#         return array_list
+#     else:
+#         pivolt = array_list[0]
+#         left = [num for num in array_list[1::] if num <= pivolt]
+#         right = [num for num in array_list[1::] if num > pivolt]
+#         return quick_sort(left) + [pivolt] + quick_sort(right)
+        
+# def main():
+#     list = [55, 67, 32, 98, 23, 76, 43, 99, 2, 1]
+#     print(quick_sort(list))
+
+# if __name__=="__main__":
+#     main()
+
+
+# Write a Python program to print a list in reverse
+
+# def print_reverse(input_list):
+#     output_list = input_list[::-1]
+#     print(output_list)
+
+# def main():
+#     list = [55, 67, 32, 98, 23, 76, 43, 99, 2, 1]
+#     print_reverse(list)
+    
+# if __name__=="__main__":
+#     main()
+
+
+# Write a Python program to check whether a string is a Palindrome or not 
+# Output: is palindrome| is not palindrome
+
+# class Palindrome():
+    
+#     def check_palindrome(self, input_istring: str):
+#         if input_istring == input_istring[::-1]:
+#             return True
+#         else:
+#             return False 
+                    
+# def main():
+#     is_palindrome = Palindrome()
+#     input_string = input()
+#     while input_string != "exit":
+#         if is_palindrome.check_palindrome(input_string):
+#             print("is palindrome")
+#         else:
+#             print("is not palindrome")
+#         input_string = input()
+        
+# if __name__=="__main__":
+#     main()
+
+# class PrintDuplicate():
+    
+#     # def print_duplicates(self, input_list):
+#     #     for number in set(input_list):
+#     #         if input_list.count(number) > 1:
+#     #             print(number)
+
+#     def print_duplicates(self, input_list):
+#         print(set([x for x in input_list if input_list.count(x) > 1 ]))
+
+                
+# def main():
+#     print_duplicate = PrintDuplicate()
+#     input = [111, 222, 44444, 666, 7, 9, 5, 222, 9, 555, 555, 111]
+#     print_duplicate.print_duplicates(input)
+    
+# if __name__=="__main__":
+#     main()
+
+
+### Input = [111, 222, 44444, 666, 7, 9, 5, 222, 9, 111]
+# output = [111, 222, 9]
+
+# class PrintDuplicate():
+    
+#     def print_duplicates(self, input_list):
+#         for number in set(input_list):        
+#             if input_list.count(number) > 1:
+#                 print(number)
+                
+# def main():
+#     print_duplicate = PrintDuplicate()
+#     input = [111, 222, 44444, 666, 7, 9, 5, 222, 9, 111]
+#     print_duplicate.print_duplicates(input)
+    
+# if __name__=="__main__":
+#     main()
+
+
+# class NumberWords():
+#     def print_number_words(self, input_sentence):
+#         list_words = input_sentence.strip().split(" ")
+#         print(len(list_words))
+        
+# def main():
+#     sentence = "O rato roeu a roupa do rei de roma"
+#     app = NumberWords()
+#     app.print_number_words(sentence)
+    
+# if __name__== "__main__":
+#     main()
+
+
+# def search_element_in_array(array, element):
+#     if element in array:
+#         print("Element found!")
+#     else:
+#         print("Element not found!")
+        
+# def main():
+#     array = [111, 222, 44444, 666, 7, 9, 5, 222, 9, 111]
+#     search_element_in_array(array, 5)
+    
+# if __name__== "__main__":
+#     main()
+
+
+## Write a Python program to implement a Binary Search 
+
+# class BinarySearch():
+
+#     def search(self, array, element):
+#         low = 0
+#         high = len(array) - 1
+#         while low <= high:
+#             midle = (low + high) // 2
+#             guess = array[midle]
+#             if guess == element:
+#                 return midle
+#             if element >= array[midle]:
+#                 low = midle + 1
+#             else:
+#                 high = midle - 1
+#         return None
+        
+# def main():
+#     array = [111, 222, 44444, 666, 7, 9, 5, 222, 9, 111, 51]
+#     array2 = list(set(array))
+#     array2.sort()
+#     print(array2)
+#     binary = BinarySearch()
+#     result = binary.search(array2, 51)
+#     if result is None:
+#         print("Elemend does not exist")
+#     else:
+#         print("The element is on the index {}".format(result))
+    
+# if __name__ =="__main__":
+#     main()
+
+
+### Write a Python program to join two strings
+
+# def join_strings(string1, string2):
+#     print("".join((string1,string2)))
+    
+# def main():
+#     string1 = "abc"
+#     string2 = "123"
+#     join_strings(string1, string2)
+    
+# if __name__== "__main__":
+#     main()
+        
+## Given a string as your input, delete any reoccurring character, and return the new string.
+
+# def delete_recurrent(string):
+#     newstring = set(string)
+#     print("".join(newstring))
+    
+# def main():
+#     string = "arara"
+#     delete_recurrent(string)
+
+# if __name__ == "__main__":
+#     main()
+    
+## Write a Python program to extract digits from given string 
+
+# class ExtracDigits():
+#     def extratc(self, string, digit):
+#         for index, letter in enumerate(string):
+#             if letter == digit:
+#                 list(string).pop(index)
+#         print(string)
+        
+# class main():
+#     ext = ExtracDigits()
+#     ext.extratc("arara","r")
+    
+# if __name__ == "__main__":
+#     main()
+                
+ 

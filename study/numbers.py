@@ -30,8 +30,8 @@
 from collections import Counter
 
 def odd_number_times(input_array):
-    grouped_values = Counter(input_array).most_common(3)
-    odd_times_list = [number for number, count in grouped_values if count % 2 != 0]
+    # grouped_values = Counter(input_array).most_common(3)
+    odd_times_list = [number for number, count in Counter(input_array).most_common(3) if count % 2 != 0]
     return odd_times_list
     
 def main():
