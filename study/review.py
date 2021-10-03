@@ -2,29 +2,29 @@
 # You're given an application log file that contain the strings DEBUG, INFO, WARN, ERROR, CRITICAL.
 # Output: print lines -  Find only the ERROR and CRITICAL lines
 
-# class ReadLogs():
-#     def __init__(self):
-#         self.logs = []
+class ReadLogs():
+    def __init__(self):
+        self.logs = []
 
-#     def read_log_file(self, logfile):
-#         with open(logfile) as logs:
-#             self.logs = [line.strip() for line in logs]
-#             # for line in logs:
-#             #     self.logs.append(line)
+    def read_log_file(self, logfile):
+        with open(logfile) as logs:
+            self.logs = [line.strip() for line in logs]
+            # for line in logs:
+            #     self.logs.append(line)
             
-#     def print_logs(self):
-#         print(*[line for line in self.logs if "ERROR" in line or "CRITICAL" in line], sep="\n")
-#         # for line in self.logs:
-#         #     if "ERROR" in line or "CRITICAL" in line:
-#         #         print(line)
+    def print_logs(self):
+        print(*[line for line in self.logs if "ERROR" in line or "CRITICAL" in line], sep="\n")
+        # for line in self.logs:
+        #     if "ERROR" in line or "CRITICAL" in line:
+        #         print(line)
 
-# def main():
-#     read_logs = ReadLogs()
-#     read_logs.read_log_file("/Users/danlsil/workspace/Deployment/EKS/Review/logs.log")
-#     read_logs.print_logs()
+def main():
+    read_logs = ReadLogs()
+    read_logs.read_log_file("/Users/danlsil/workspace/Deployment/EKS/Review/logs.log")
+    read_logs.print_logs()
     
-# if __name__=="__main__":
-#     main()
+if __name__=="__main__":
+    main()
 
 
 # from collections import Counter
@@ -103,6 +103,23 @@
 # if __name__ =="__main__":
 #     main()
 
+
+# Write a function that takes an array as a parameter.
+# The array contains non-negative numbers.
+# Every number in the array appears an even number of times,
+# except for one number that appears an odd number of times.
+# The function should return the number that appears an odd number of times.
+# Example: [1, 1, 5, 5, 2, 2, 2, 3, 3] => 2
+
+def find_odd_count(input_array) -> int:
+    return [number for number in set(input_array) if input_array.count(number) % 2 == 1][0]
+    
+def main():
+    input_array = [1, 1, 5, 5, 2, 2, 2, 3, 3]
+    print(find_odd_count(input_array))
+        
+if __name__=="__main__":
+    main()
 
 # def sum_cards(list_cards):
 #     sum_values = 0

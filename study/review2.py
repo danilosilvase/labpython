@@ -251,3 +251,53 @@
     
 # if __name__ == "__main__":
 #     main()
+
+# def main():
+#     # n = 1
+#     # array = [1, 2, 3, 4, 5]
+#     # array2 = array[n:]+array[:n]
+#     # print(array2)
+#     list1 = [1,2,3,4,5,6,"a", "b"]
+#     list2 = [3, 5, 7, 9,"b"]
+#     list3 = set(list1).intersection(list2)
+#     print(list3)
+
+
+#     set(lista).intersection(lista2)
+
+
+# if __name__ == "__main__":
+#     main()
+
+
+
+    # array[0] = array[1]
+    # array[1] = array[2]
+    # array[2] = array[3]
+    # array[3] = array[4]
+    # array[-1] = fisrt
+    # print(array)
+    # fisrt = array[0]
+    # array[0] = array[1]
+    # array[1] = array[2]
+    # array[2] = array[3]
+    # array[3] = array[4]
+    # array[-1] = fisrt
+    # print(array)
+    # fisrt = array[0]
+    # array[0] = array[1]
+    # array[1] = array[2]
+    # array[2] = array[3]
+    # array[3] = array[4]
+    # array[-1] = fisrt
+    # print(array)
+    # fisrt = array[0]
+    # array[0] = array[1]
+    # array[1] = array[2]
+    # array[2] = array[3]
+    # array[3] = array[4]
+    # array[-1] = fisrt
+    # print(array)
+
+
+
