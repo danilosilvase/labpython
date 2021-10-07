@@ -1,4 +1,4 @@
-### Apache logs
+## Apache logs
 
 # from collections import Counter
 
@@ -31,15 +31,16 @@
 # The function should return the number that appears an odd number of times.
 # Example: [1, 1, 5, 5, 2, 2, 2, 3, 3] => 2
 
-# def find_odd_count(input_array) -> int:
-#     return [number for number in set(input_array) if input_array.count(number) % 2 == 1][0]
+def find_odd_count(input_array) -> int:
+    print(input_array.count(2))
+    return [number for number in set(input_array) if input_array.count(number) % 2 == 1]
     
-# def main():
-#     input_array = [1, 1, 5, 5, 2, 2, 2, 3, 3]
-#     print(find_odd_count(input_array))
+def main():
+    input_array = [1, 1, 5, 5, 2, 2, 2, 3, 3]
+    print(find_odd_count(input_array))
         
-# if __name__=="__main__":
-#     main()
+if __name__=="__main__":
+    main()
 
 # def find_odd_count(input_array) -> None:
 #     print((number for number in input_array))

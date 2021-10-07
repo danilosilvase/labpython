@@ -107,6 +107,8 @@ print(count_of_digits)
 
 
 Example: [1, 1, 1, 1, 3, 5, 5, 2, 2, 2, 3, 3, 3] => 2
+
+
 2 3 4 5 6 7 8 9 10 J Q K A
 
 # Hearts Diamonds Spades Clubs
