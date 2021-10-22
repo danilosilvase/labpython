@@ -1,0 +1,63 @@
+danlsil@08f8bc638542 ~ % aws ec2 describe-vpc-endpoints --region us-west-2
+{
+    "VpcEndpoints": [
+        {
+            "VpcEndpointId": "vpce-0dc7e8566cd4b7024",
+            "VpcEndpointType": "Interface",
+            "VpcId": "vpc-5449132c",
+            "ServiceName": "com.amazonaws.us-west-2.ecr.api",
+            "State": "available",
+            "PolicyDocument": "{\n  \"Statement\": [\n    {\n      \"Action\": \"*\", \n      \"Effect\": \"Allow\", \n      \"Principal\": \"*\", \n      \"Resource\": \"*\"\n    }\n  ]\n}",
+            "RouteTableIds": [],
+            "SubnetIds": [
+                "subnet-09d16671",
+                "subnet-9e20f1d4",
+                "subnet-2dd9e706",
+                "subnet-ac5ed8f1"
+            ],
+            "Groups": [
+                {
+                    "GroupId": "sg-ce786de8",
+                    "GroupName": "default"
+                }
+            ],
+            "PrivateDnsEnabled": true,
+            "RequesterManaged": false,
+            "NetworkInterfaceIds": [
+                "eni-0809c91f4473faa45",
+                "eni-055d5dee9ce64c166",
+                "eni-03860af82ebed23cb",
+                "eni-082c992a66b3c9883"
+            ],
+            "DnsEntries": [
+                {
+                    "DnsName": "vpce-0dc7e8566cd4b7024-9iwierze.api.ecr.us-west-2.vpce.amazonaws.com",
+                    "HostedZoneId": "Z1YSA3EXCYUU9Z"
+                },
+                {
+                    "DnsName": "vpce-0dc7e8566cd4b7024-9iwierze-us-west-2a.api.ecr.us-west-2.vpce.amazonaws.com",
+                    "HostedZoneId": "Z1YSA3EXCYUU9Z"
+                },
+                {
+                    "DnsName": "vpce-0dc7e8566cd4b7024-9iwierze-us-west-2b.api.ecr.us-west-2.vpce.amazonaws.com",
+                    "HostedZoneId": "Z1YSA3EXCYUU9Z"
+                },
+                {
+                    "DnsName": "vpce-0dc7e8566cd4b7024-9iwierze-us-west-2c.api.ecr.us-west-2.vpce.amazonaws.com",
+                    "HostedZoneId": "Z1YSA3EXCYUU9Z"
+                },
+                {
+                    "DnsName": "vpce-0dc7e8566cd4b7024-9iwierze-us-west-2d.api.ecr.us-west-2.vpce.amazonaws.com",
+                    "HostedZoneId": "Z1YSA3EXCYUU9Z"
+                },
+                {
+                    "DnsName": "api.ecr.us-west-2.amazonaws.com",
+                    "HostedZoneId": "Z0217568244372OYL0P1Q"
+                }
+            ],
+            "CreationTimestamp": "2021-10-15T10:41:57.384000+00:00",
+            "Tags": [],
+            "OwnerId": "446761287601"
+        }
+    ]
+}
